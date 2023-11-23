@@ -5,7 +5,7 @@ Create database IF NOT EXISTS exo_contacts CHARACTER set "utf8" COLLATE = "utf8_
 USE exo_contacts;
 
 CREATE TABLE contacts (
-    id INT UNSIGNED PRIMARY KEY auto_increment,
+    id INT UNSIGNED PRIMARY KEY,
     nom VARCHAR(70) NOT NULL,
     prenom VARCHAR(70) NOT NULL,
     date_de_naissance DATE,
@@ -32,6 +32,15 @@ CREATE TABLE pays_iso (
 
 INSERT INTO pays_iso (iso_3,nom,iso_2,nationalite) VALUES
 ('FRA','France','FR','Française');
+
+CREATE TABLE telephone (
+    id INT PRIMARY KEY,
+    id_contact INT,
+    numero VARCHAR(50),
+    type BYTE,
+    FOREIGN KEY (id_contact) REFERENCES contacts(id)
+);
+
 
 SHOW DATABASES;
 
