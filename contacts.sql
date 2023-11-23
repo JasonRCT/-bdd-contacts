@@ -56,14 +56,14 @@ INSERT INTO contacts (nom,prenom,date_de_naissance,sexe,adresse,code_postal,vill
 ('Terieur', 'Alain', '1993-06-15', 'M', '13 Place de la Comédie', '34000', 'Montpellier', 'FRA'),
 ('Terieur', 'Alex', '1984-01-30', 'F', '45 Chemin des Amandiers', '30000', 'Nîmes', 'FRA');
 
-INSERT INTO telephone (id, id_contact, numero, type) VALUES
-(1, 1, '123456789', 'Mobile'),
-(2, 1, '987654321', 'Domicile'),
-(3, 2, '555111222', 'Mobile'),
-(4, 3, '999888777', 'Travail'),
-(5, 4, '333444555', 'Mobile'),
-(6, 5, '777888999', 'Domicile'),
-(7, 6, '111222333', 'Mobile'),
-(8, 7, '444555666', 'Domicile'),
-(9, 8, '666777888', 'Travail'),
-(10, 9, '888999000', 'Mobile');
+INSERT INTO telephone (id_contact, numero, type) VALUES
+(1, '123456789', 'Mobile'),
+(1, '987654321', 'Domicile'),
+(2, '555111222', 'Mobile'),
+(3, '999888777', 'Travail'),
+(4, '333444555', 'Mobile'),
+(5, '777888999', 'Domicile'),
+(6, '111222333', 'Mobile'),
+(7, '444555666', 'Domicile'),
+(8, '666777888', 'Travail'),
+(9, '888999000', 'Mobile');
