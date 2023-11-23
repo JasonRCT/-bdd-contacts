@@ -18,10 +18,16 @@ CREATE TABLE contacts (
 );
 
 INSERT INTO contacts (nom,prenom,date_de_naissance,sexe,adresse,code_postal,ville,pays) VALUES
-
-
-
-
+('Dupont', 'Jean', '1990-05-15', 'M', '123 Rue de la Liberté', '75000', 'Paris', 'FRA'),
+('Smith', 'Emily', '1985-08-22', 'F', '456 Main Street', '10001', 'New York', 'USA'),
+('Tremblay', 'Michel', '1982-03-10', 'M', '789 Rue Principale', 'H2X 1Y6', 'Montréal', 'CAN'),
+('Schmidt', 'Anna', '1995-11-28', 'F', '987 Hauptstraße', '10115', 'Berlin', 'GER'),
+('Durand', 'Bernard', '1988-07-03', 'M', '3 Rue de la République', '84000', 'Avignon', 'FRA'),
+('Oliveira', 'Isabela', '1992-09-18', 'F', '654 Avenida Paulista', '01310-000', 'São Paulo', 'BRA'),
+('Smith', 'Liam', '1980-12-05', 'M', '321 Bourke Street', '3000', 'Melbourne', 'AUS'),
+('Albert', 'Louis', '1987-04-20', 'M', '33 Avenue Charles De Gaulle', '13000', 'Marseille', 'FRA'),
+('Terieur', 'Alain', '1993-06-15', 'M', '13 Place de la Comédie', '34000', 'Montpellier', 'FRA'),
+('Terieur', 'Alex', '1984-01-30', 'F', '45 Chemin des Amandiers', '30000', 'Nîmes', 'FRA');
 
 CREATE TABLE pays_iso (
         iso_3 CHAR(3)PRIMARY KEY,
