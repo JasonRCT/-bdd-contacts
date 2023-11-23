@@ -31,7 +31,16 @@ CREATE TABLE pays_iso (
 );
 
 INSERT INTO pays_iso (iso_3,nom,iso_2,nationalite) VALUES
-('FRA','France','FR','Française');
+('FRA','France','FR','Française'),
+('USA', 'États-Unis', 'US', 'Américaine'),
+('CAN', 'Canada', 'CA', 'Canadienne'),
+('GER', 'Allemagne', 'DE', 'Allemande'),
+('JPN', 'Japon', 'JP', 'Japonaise'),
+('BRA', 'Brésil', 'BR', 'Brésilienne'),
+('AUS', 'Australie', 'AU', 'Australienne'),
+('IND', 'Inde', 'IN', 'Indienne'),
+('CHN', 'Chine', 'CN', 'Chinoise'),
+('GBR', 'Royaume-Uni', 'GB', 'Britannique');
 
 CREATE TABLE telephone (
     id INT PRIMARY KEY,
