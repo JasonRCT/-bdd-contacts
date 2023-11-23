@@ -23,7 +23,15 @@ INSERT INTO contacts (nom,prenom,date_de_naissance,sexe,adresse,code_postal,vill
 
 
 
+CREATE TABLE pays_iso (
+        iso_3 CHAR(3)PRIMARY KEY,
+        nom VARCHAR(70),
+        iso_2 VARCHAR(2),
+        nationalite VARCHAR(50)
+);
 
+INSERT INTO pays_iso (iso_3,nom,iso_2,nationalite) VALUES
+('FRA','France','FR','Française');
 
 SHOW DATABASES;
 
