@@ -14,10 +14,10 @@ CREATE TABLE contacts (
     code_postal VARCHAR(10),
     ville VARCHAR(70),
     pays VARCHAR(3),
-    FOREIGN KEY(pays) REFERENCES pays_iso(iso_3)
+    FOREIGN KEY(pays) REFERENCES pays(iso_3)
 );
 
-INSERT INTO contacts (nom,prenom,date_de_naissance,sexe,adresse,code_postal,ville,pays)
+INSERT INTO contacts (nom,prenom,date_de_naissance,sexe,adresse,code_postal,ville,pays) VALUES
 
 
 
@@ -30,7 +30,7 @@ CREATE TABLE pays_iso (
         nationalite VARCHAR(50)
 );
 
-INSERT INTO pays_iso (iso_3,nom,iso_2,nationalite) VALUES
+INSERT INTO pays (iso_3,nom,iso_2,nationalite) VALUES
 ('FRA','France','FR','Française'),
 ('USA', 'États-Unis', 'US', 'Américaine'),
 ('CAN', 'Canada', 'CA', 'Canadienne'),
@@ -46,9 +46,21 @@ CREATE TABLE telephone (
     id INT PRIMARY KEY,
     id_contact INT,
     numero VARCHAR(50),
-    type BYTE,
+    type TINYINT,
     FOREIGN KEY (id_contact) REFERENCES contacts(id)
 );
+
+INSERT INTO telephone (id, id_contact_numero, type) VALUES
+(1, 101, 'Mobile'),
+(2, 102, 'Domicile'),
+(3, 103, 'Travail'),
+(4, 104, 'Mobile'),
+(5, 105, 'Domicile'),
+(6, 106, 'Travail'),
+(7, 107, 'Mobile'),
+(8, 108, 'Domicile'),
+(9, 109, 'Travail'),
+(10, 110, 'Mobile');
 
 
 SHOW DATABASES;
